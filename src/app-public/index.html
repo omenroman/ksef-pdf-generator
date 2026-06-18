@@ -3,26 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <title>XML Parser</title>
+    <link
+      href="./styles.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>📄 XML Parser</h1>
+    <div class="page">
+      <div class="top-bar">
+        <h1>📄 <span data-i18n="title"></span></h1>
+        <div class="lang-field">
+          <label data-i18n="languageLabel" for="langSelect"></label>
+          <select id="langSelect">
+            <option value="en">English</option>
+            <option value="pl">Polski</option>
+          </select>
+        </div>
+      </div>
 
-    <h2>Wygeneruj fakture:</h2>
-    <input
-      accept=".xml"
-      id="xmlInput"
-      type="file"
-    />
+      <div class="card">
+        <h2 data-i18n="generateInvoiceHeader"></h2>
+        <div class="field">
+          <label data-i18n="nrKSeFLabel" for="nrKSeFInput"></label>
+          <input
+            id="nrKSeFInput"
+            type="text"
+          />
+          <span
+            class="error"
+            id="nrKSeFError"
+          ></span>
+        </div>
+        <div class="field">
+          <label data-i18n="qrCodeLabel" for="qrCodeInput"></label>
+          <input
+            id="qrCodeInput"
+            type="text"
+          />
+          <span
+            class="error"
+            id="qrCodeError"
+          ></span>
+        </div>
+        <input
+          accept=".xml"
+          id="xmlInput"
+          type="file"
+        />
+        <span
+          class="error"
+          id="xmlInputError"
+        ></span>
+        <div class="field checkbox-field">
+          <input
+            id="doubleInvoiceCheckbox"
+            type="checkbox"
+          />
+          <label data-i18n="doubleInvoiceLabel" for="doubleInvoiceCheckbox"></label>
+        </div>
+        <button
+          data-i18n="generateButton"
+          id="generateInvoiceBtn"
+          type="button"
+        ></button>
+      </div>
 
-    <h2>Wygeneruj UPO:</h2>
-    <input
-      accept=".xml"
-      id="xmlInputUPO"
-      type="file"
-    />
+      <div class="card">
+        <h2 data-i18n="generateUpoHeader"></h2>
+        <input
+          accept=".xml"
+          id="xmlInputUPO"
+          type="file"
+        />
+        <span
+          class="error"
+          id="xmlInputUPOError"
+        ></span>
+        <button
+          data-i18n="generateButton"
+          id="generateUpoBtn"
+          type="button"
+        ></button>
+      </div>
+    </div>
 
     <script
-      src="./main.ts"
+      src="./main-updated.ts"
       type="module"
     ></script>
   </body>

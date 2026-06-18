@@ -1,0 +1,138 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 2.5rem 1rem;
+  background: #f4f5f7;
+  color: #1f2330;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 560px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.lang-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #555b6e;
+}
+
+.lang-field select {
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d3d6de;
+  background: #fff;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e5ea;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+}
+
+.field {
+  margin-bottom: 0.9rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.85rem;
+  color: #555b6e;
+  margin-bottom: 0.35rem;
+}
+
+.field input[type='text'] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid #d3d6de;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.field input[type='text']:focus {
+  outline: 2px solid #4f7cff;
+  outline-offset: 1px;
+}
+
+.field input[type='text'].invalid {
+  border-color: #e03131;
+}
+
+.error {
+  display: block;
+  min-height: 1.1em;
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  color: #e03131;
+}
+
+button {
+  margin-top: 0.75rem;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4f7cff;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3d68e8;
+}
+
+input[type='file'] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: 1px dashed #c4c9d4;
+  border-radius: 8px;
+  background: #fafbfc;
+  font-size: 0.85rem;
+}
+
+input[type='file'].invalid {
+  border-color: #e03131;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.checkbox-field label {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  color: #555b6e;
+}

@@ -896,5 +896,19 @@
       "documentsHeader": "Numery dokumentów magazynowych WZ",
       "number": "Numer WZ"
     }
+  },
+  "ui": {
+    "title": "Parser XML",
+    "generateInvoiceHeader": "Wygeneruj fakturę:",
+    "generateUpoHeader": "Wygeneruj UPO:",
+    "nrKSeFLabel": "Numer KSeF:",
+    "qrCodeLabel": "Link do kodu QR:",
+    "languageLabel": "Język:",
+    "nrKSeFRequired": "Numer KSeF jest wymagany.",
+    "qrCodeRequired": "Link do kodu QR jest wymagany.",
+    "qrCodeInvalid": "Link do kodu QR musi być prawidłowym adresem URL.",
+    "generateButton": "Generuj",
+    "selectFileError": "Wybierz plik XML.",
+    "doubleInvoiceLabel": "Podwójna faktura (PL + EN)"
   }
 }

@@ -671,6 +671,7 @@
       "qualityDesc": "Class or quality description",
       "quantity": "Quantity",
       "remainingAmount": "Remaining amount due: ",
+      "remainingAmountCorrection": "Adjustment of the outstanding balance: ",
       "stateBefore": "State before",
       "taxRate": "Tax rate",
       "totalAmountDue": "Total amount due: ",

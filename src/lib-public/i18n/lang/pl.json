@@ -916,7 +916,10 @@
     "qrCodeInvalid": "Link do kodu QR musi być prawidłowym adresem URL.",
     "generateButton": "Generuj",
     "selectFileError": "Wybierz plik XML.",
-    "doubleInvoiceLabel": "Podwójna faktura (PL + EN)"
+    "doubleInvoiceLabel": "Podwójna faktura (PL + EN)",
+    "acquisitionDateRequired": "KSeF number assignment date is required.",
+    "acquisitionDateInvalid": "KSeF number assignment date must be a valid date (DD.MM.YYYY)",
+    "acquisitionDateLabel": "KSeF number assignment date (DD.MM.YYYY):"
   },
   "pef": {
     "invoiceHeader": {

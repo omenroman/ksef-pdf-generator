@@ -7,8 +7,12 @@ const inputInvoice: HTMLInputElement = document.getElementById('xmlInput') as HT
 const inputUPO: HTMLInputElement = document.getElementById('xmlInputUPO') as HTMLInputElement;
 const nrKSeFInput: HTMLInputElement = document.getElementById('nrKSeFInput') as HTMLInputElement;
 const qrCodeInput: HTMLInputElement = document.getElementById('qrCodeInput') as HTMLInputElement;
+const acquisitionDateInput: HTMLInputElement = document.getElementById(
+  'acquisitionDateInput'
+) as HTMLInputElement;
 const nrKSeFError: HTMLElement = document.getElementById('nrKSeFError') as HTMLElement;
 const qrCodeError: HTMLElement = document.getElementById('qrCodeError') as HTMLElement;
+const acquisitionDateError: HTMLElement = document.getElementById('acquisitionDateError') as HTMLElement;
 const xmlInputError: HTMLElement = document.getElementById('xmlInputError') as HTMLElement;
 const xmlInputUPOError: HTMLElement = document.getElementById('xmlInputUPOError') as HTMLElement;
 const generateInvoiceBtn: HTMLButtonElement = document.getElementById(
@@ -27,6 +31,13 @@ function isValidUrl(value: string): boolean {
   } catch {
     return false;
   }
+}
+
+function isValidDate(dateString: string): boolean {
+  const [day, month, year] = dateString.split('.').map(Number);
+  const date = new Date(year, month - 1, day);
+
+  return date.getDate() === day && date.getMonth() === month - 1 && date.getFullYear() === year;
 }
 
 function setFieldError(input: HTMLInputElement, errorElement: HTMLElement, message: string): boolean {
@@ -61,11 +72,26 @@ function validateQrCode(): boolean {
   return setFieldError(qrCodeInput, qrCodeError, message);
 }
 
+function validateAcquisitionDate(): boolean {
+  const acquisitionDate: string = acquisitionDateInput.value.trim();
+
+  let message = '';
+
+  if (!acquisitionDate) {
+    message = i18next.t('ui.acquisitionDateRequired');
+  } else if (!isValidDate(acquisitionDate)) {
+    message = i18next.t('ui.acquisitionDateInvalid');
+  }
+
+  return setFieldError(acquisitionDateInput, acquisitionDateError, message);
+}
+
 function validateInputs(): boolean {
   const nrKSeFValid: boolean = validateNrKSeF();
   const qrCodeValid: boolean = validateQrCode();
+  const acquisitionDateValid: boolean = validateAcquisitionDate();
 
-  return nrKSeFValid && qrCodeValid;
+  return nrKSeFValid && qrCodeValid && acquisitionDateValid;
 }
 
 nrKSeFInput.addEventListener('input', validateNrKSeF);
@@ -136,6 +162,7 @@ generateInvoiceBtn.addEventListener('click', async (): Promise<void> => {
   const additionalData: AdditionalDataTypes = {
     nrKSeF: nrKSeFInput.value,
     qrCode: qrCodeInput.value,
+    acDate: acquisitionDateInput.value,
   };
 
   if (doubleInvoiceCheckbox.checked) {

@@ -916,7 +916,10 @@
     "qrCodeInvalid": "QR code link must be a valid URL.",
     "generateButton": "Generate",
     "selectFileError": "Please select an XML file.",
-    "doubleInvoiceLabel": "Double invoice (PL + EN)"
+    "doubleInvoiceLabel": "Double invoice (PL + EN)",
+    "acquisitionDateRequired": "KSeF number assignment date is required.",
+    "acquisitionDateInvalid": "KSeF number assignment date valid date (DD.MM.YYYY)",
+    "acquisitionDateLabel": "KSeF number assignment date (DD.MM.YYYY):"
   },
   "pef": {
     "invoiceHeader": {

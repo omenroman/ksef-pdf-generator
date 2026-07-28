@@ -423,7 +423,8 @@
       "partialPayMechanism": "Split payment mechanism",
       "reverseTax": "Reverse charge",
       "selfInvoice": "Self-billing",
-      "threePartsSimplerMethod": "Simplified triangular procedure",
+      "simplifiedWeInfoiceLabel": "ExampleText",
+      "simplifiedWeInfoice": "Simplified triangular procedure",
       "transportApprovalDate": "Date the new means of transport was approved for use",
       "transportBrand": "Make of the new means of transport",
       "transportColor": "Color of the new means of transport",
@@ -531,6 +532,7 @@
       "correctionSettlement": "Corrective Invoice for a Settlement Invoice",
       "invoiceNumberLabel": "Invoice Number:",
       "ksefNumberLabel": "KSeF Number:",
+      "acquisitionDate": "ExampleText",
       "ksefPart1": "National System of ",
       "ksefPart2": "e",
       "ksefPart3": "-Invoices",
@@ -573,6 +575,8 @@
       "taxRate": "Tax rate",
       "totalAmountDue": "Total amount due: ",
       "uniqueRowNumber": "Unique row number",
+      "uuid": "ExampleText",
+      "uuidz": "ExampleText",
       "unit": "Unit"
     },
     "payment": {
@@ -679,6 +683,8 @@
       "uniqueRowNumber": "Unique row number",
       "unit": "Unit",
       "unitPrice": "Unit price",
+      "uuid": "ExampleText",
+      "uuidz": "ExampleText",
       "valueZZP": "Value including ZZP",
       "vatSalesValue": "VAT sales value",
       "wageZZP": "ZZP rate"
@@ -911,5 +917,144 @@
     "generateButton": "Generate",
     "selectFileError": "Please select an XML file.",
     "doubleInvoiceLabel": "Double invoice (PL + EN)"
+  },
+  "pef": {
+    "invoiceHeader": {
+      "documentCurrencyCode": "Waluta faktury",
+      "payableAmount": "Kwota do zapłaty",
+      "dueDate": "Termin płatności",
+      "buyerReference": "Znak kupującego",
+      "issueDate": "Data wystawienia faktury",
+      "taxPointDate": "Data opodatkowania",
+      "startDate": "Data początkowa okresu faktury",
+      "endDate": "Data końcowa okresu faktury",
+      "contractDocumentReferenceId": "Numer kontraktu",
+      "orderReferenceId": "Numer zamówienia wg kupującego",
+      "orderReferenceSalesOrderId": "Numer awiza wysyłki",
+      "receiptDocumentReferenceId": "Numer potwierdzenia odbioru",
+      "note": "Uwagi ogólne do dokumentu"
+    },
+    "customer": {
+      "header": ""
+    },
+    "supplier": {
+      "header": ""
+    },
+    "contact": {
+      "nameAndSurname": "",
+      "phoneNumber": "",
+      "mail": "",
+      "pefId": "",
+      "title": ""
+    },
+    "postal": {
+      "address": ""
+    },
+    "registration": {
+      "title": "",
+      "id": "",
+      "Identifier": ""
+    },
+    "taxRepresentative": {
+      "header": ""
+    },
+    "delivery": {
+      "header": "",
+      "deliveryLocationID": "",
+      "actualDeliveryDate": ""
+    },
+    "payeeparty": {
+      "header": "Payee party",
+      "companyID": "",
+      "partyIdentificationID": ""
+    },
+    "invoiceDescrption": {
+      "invoiceNumber": "Numer faktury poprzedzającej",
+      "dated": " z dn. ",
+      "referenceNumber": "Numer ogłoszenia o przetargu lub jego części",
+      "projectNumber": "Numer projektu",
+      "additionalDocuments": "Dokumenty dodatkowe do faktury",
+      "buyerCostReference": "Znak stanowiska kosztów u nabywcy",
+      "supportingDocumentReference": "Znak dokumentu dodatkowego",
+      "link": "Link do dokumentu dodatkowego: ",
+      "documentDescription": "Opis dokumentu dodatkowego: ",
+      "fileType": "Typ pliku: ",
+      "fileName": "Nazwa pliku: "
+    },
+    "stepper": {
+      "messageVersion": "Wersja komunikatu",
+      "descriptionVersion": "Ten dokument został wygenerowany na podstawie wizualizacji PEF.v_1.4.37.02",
+      "generatorVersion": "(ksef-pdf-generator - wersja {{version}})"
+    },
+    "taxtotal": {
+      "taxAmountId": "",
+      "taxSubtotalHeader": "",
+      "taxCategory": "",
+      "taxExemptionReason": "",
+      "taxableAmount": "",
+      "taxAmount": ""
+    },
+    "payment": {
+      "title": "Instrukcje płatności",
+      "paymentTerms": "Warunki płatności",
+      "paymentTypeCode": "Kod typu płatności",
+      "paymentIdentification": "Identyfikacja płatności",
+      "paymentServiceProviderId": "Identyfikator dostawcy usługi płatniczej",
+      "paymentRecipientAccountNumber": "Numer konta odbioru płatności",
+      "paymentRecipientAccountName": "Nazwa konta odbioru płatności",
+      "cardNetworkId": "Identyfikator sieci obsługi karty",
+      "paymentCardAccountNumber": "Numer konta karty płatniczej",
+      "paymentCardHolderName": "Nazwa właściciela karty płatniczej",
+      "debitedAccountId": "Identyfikator obciążanego konta",
+      "directDebitId": "Identyfikator polecenia zapłaty"
+    },
+    "legalMonetaryTotal": {
+      "taxExclusiveAmount": "",
+      "taxInclusiveAmount ": "",
+      "prepaidAmount": "",
+      "rndPrepaidAmount": "",
+      "payableAmount": ""
+    },
+    "allowancecharge": {
+      "allowanceHeader": "",
+      "chargeHeader": "",
+      "allowanceReason": "",
+      "chargeReason": "",
+      "allowanceReasonCode": "",
+      "chargeReasonCode": "",
+      "baseAmount": "",
+      "allowanceAmount": "",
+      "chargeAmount": "",
+      "taxCategory": "",
+      "totalAmount": ""
+    },
+    "invoiceLine": {
+      "title": "Pozycje faktury",
+      "lineNo": "L.p.",
+      "name": "Nazwa",
+      "quantityUom": "Ilość JM",
+      "netPrice": "Cena netto",
+      "taxTypeRate": "Rodzaj i stawka podatku",
+      "chargesDiscounts": "Obciążenia, upusty",
+      "netAmount": "Kwota netto",
+      "description": "Opis",
+      "standardId": "Identyfikator standardowy",
+      "classificationId": "Identyfikator klasyfikacji",
+      "sellerId": "Identyfikator wg sprzedającego",
+      "additionalAttributes": "Dodatkowe właściwości/parametry",
+      "note": "Uwaga",
+      "buyerItemId": "Identyfikator pozycji wg kupującego",
+      "buyerCostCenterCode": "Znak stanowiska kosztów u nabywcy",
+      "billingPeriod": "Okres fakturowania dla pozycji faktury",
+      "periodStartDate": "Data początkowa okresu",
+      "periodEndDate": "Data końcowa okresu",
+      "netPriceDiscount": "Rabat od ceny netto",
+      "grossPrice": "Cena brutto pozycji",
+      "originCountry": "Kraj pochodzenia",
+      "purchaseOrderItemId": "Identyfikator pozycji powiązanego zamówienia zakupu",
+      "invoiceItemId": "Identyfikator przedmiotu fakturowania w pozycji faktury",
+      "charges": "Obciążenia",
+      "discounts": "Upusty"
+    }
   }
 }

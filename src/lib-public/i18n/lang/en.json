@@ -513,7 +513,27 @@
       "productName": "Name of goods or service",
       "quantity": "Quantity",
       "totalValue": "Total discount value: ",
-      "unit": "Unit"
+      "unit": "Unit",
+      "cn": "ExampleText",
+      "currencyRate": "ExampleText",
+      "exciseTaxAmount": "ExampleText",
+      "gtin": "ExampleText",
+      "gtu": "ExampleText",
+      "index": "ExampleText",
+      "netSalesValue": "ExampleText",
+      "netUnitPrice": "ExampleText",
+      "grossUnitPrice": "ExampleText",
+      "ossTaxRate": "ExampleText",
+      "pkob": "ExampleText",
+      "pkwiu": "ExampleText",
+      "procedure": "ExampleText",
+      "productMarker": "ExampleText",
+      "taxAmount": "ExampleText",
+      "taxRate": "ExampleText",
+      "uuid": "ExampleText",
+      "discount": "ExampleText",
+      "grossSalesValue": "ExampleText",
+      "getOrMakeDate": "ExampleText"
     },
     "footer": {
       "generatedIn": "Generated in: ",
@@ -923,19 +943,24 @@
   },
   "pef": {
     "invoiceHeader": {
-      "documentCurrencyCode": "Invoice currency",
-      "payableAmount": "Amount payable",
-      "dueDate": "Payment due date",
-      "buyerReference": "Buyer reference",
-      "issueDate": "Invoice issue date",
-      "taxPointDate": "Tax point date",
-      "startDate": "Invoice period start date",
-      "endDate": "Invoice period end date",
-      "contractDocumentReferenceId": "Contract number",
-      "orderReferenceId": "Buyer's order number",
-      "orderReferenceSalesOrderId": "Shipping advice number",
-      "receiptDocumentReferenceId": "Receipt confirmation number",
-      "note": "General document notes"
+      "documentCurrencyCode": "Waluta faktury",
+      "payableAmount": "Kwota do zapłaty",
+      "dueDate": "Termin płatności",
+      "buyerReference": "Znak kupującego",
+      "issueDate": "Data wystawienia faktury",
+      "taxPointDate": "Data opodatkowania",
+      "startDate": "Data początkowa okresu faktury",
+      "endDate": "Data końcowa okresu faktury",
+      "contractDocumentReferenceId": "Numer kontraktu",
+      "orderReferenceId": "Numer zamówienia wg kupującego",
+      "orderReferenceSalesOrderId": "Numer awiza wysyłki",
+      "receiptDocumentReferenceId": "Numer potwierdzenia odbioru",
+      "note": "Uwagi ogólne do dokumentu",
+      "accountingCost": "ExampleText",
+      "invoiceDocumentReference": {
+        "issueDate": "ExampleText",
+        "id": "ExampleText"
+      }
     },
     "customer": {
       "header": ""
@@ -1012,11 +1037,18 @@
       "directDebitId": "Direct debit identification"
     },
     "legalMonetaryTotal": {
-      "taxExclusiveAmount": "",
-      "taxInclusiveAmount ": "",
-      "prepaidAmount": "",
-      "rndPrepaidAmount": "",
-      "payableAmount": ""
+      "taxExclusiveAmount": "ExampleText",
+      "taxInclusiveAmount ": "ExampleText",
+      "prepaidAmount": "ExampleText",
+      "rndPrepaidAmount": "ExampleText",
+      "payableAmount": "ExampleText",
+      "settlementAmount": "ExampleText",
+      "additionalInvoiceGrossData": {
+        "Bilans": "ExampleText",
+        "Faktury": "ExampleText",
+        "Raty": "ExampleText",
+        "Odsetki": "ExampleText"
+      }
     },
     "allowancecharge": {
       "allowanceHeader": "",

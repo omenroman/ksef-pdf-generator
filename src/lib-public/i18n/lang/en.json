@@ -514,26 +514,26 @@
       "quantity": "Quantity",
       "totalValue": "Total discount value: ",
       "unit": "Unit",
-      "cn": "ExampleText",
-      "currencyRate": "ExampleText",
-      "exciseTaxAmount": "ExampleText",
-      "gtin": "ExampleText",
-      "gtu": "ExampleText",
-      "index": "ExampleText",
-      "netSalesValue": "ExampleText",
-      "netUnitPrice": "ExampleText",
-      "grossUnitPrice": "ExampleText",
-      "ossTaxRate": "ExampleText",
-      "pkob": "ExampleText",
-      "pkwiu": "ExampleText",
-      "procedure": "ExampleText",
-      "productMarker": "ExampleText",
-      "taxAmount": "ExampleText",
-      "taxRate": "ExampleText",
-      "uuid": "ExampleText",
-      "discount": "ExampleText",
-      "grossSalesValue": "ExampleText",
-      "getOrMakeDate": "ExampleText"
+      "cn": "CN",
+      "currencyRate": "Exchange rate",
+      "exciseTaxAmount": "Excise tax amount",
+      "gtin": "GTIN",
+      "gtu": "GTU",
+      "index": "Index",
+      "netSalesValue": "Net sales value",
+      "netUnitPrice": "Net unit price",
+      "grossUnitPrice": "Gross unit price",
+      "ossTaxRate": "OSS tax rate",
+      "pkob": "PKOB",
+      "pkwiu": "PKWiU",
+      "procedure": "Procedure",
+      "productMarker": "Marker for goods or services listed in Annex 15 to the Act",
+      "taxAmount": "Tax amount",
+      "taxRate": "Tax rate",
+      "uuid": "UUID",
+      "discount": "Discount",
+      "grossSalesValue": "Gross sales value",
+      "getOrMakeDate": "Delivery/performance date"
     },
     "footer": {
       "generatedIn": "Generated in: ",
@@ -942,59 +942,72 @@
     "acquisitionDateLabel": "KSeF number assignment date (DD.MM.YYYY):"
   },
   "pef": {
+    "from": "from",
+    "to": "to",
+    "after": "State before correction",
+    "before": "State after correction",
+    "sum": "Total",
     "invoiceHeader": {
-      "documentCurrencyCode": "Waluta faktury",
-      "payableAmount": "Kwota do zapłaty",
-      "dueDate": "Termin płatności",
-      "buyerReference": "Znak kupującego",
-      "issueDate": "Data wystawienia faktury",
-      "taxPointDate": "Data opodatkowania",
-      "startDate": "Data początkowa okresu faktury",
-      "endDate": "Data końcowa okresu faktury",
-      "contractDocumentReferenceId": "Numer kontraktu",
-      "orderReferenceId": "Numer zamówienia wg kupującego",
-      "orderReferenceSalesOrderId": "Numer awiza wysyłki",
-      "receiptDocumentReferenceId": "Numer potwierdzenia odbioru",
-      "note": "Uwagi ogólne do dokumentu",
-      "accountingCost": "ExampleText",
+      "invoice": "INVOICE",
+      "correctiveInvoice": "CORRECTIVE INVOICE",
+      "documentCurrencyCode": "Invoice currency",
+      "payableAmount": "Amount payable",
+      "dueDate": "Payment due date",
+      "buyerReference": "Buyer reference",
+      "issueDate": "Invoice issue date",
+      "taxPointDate": "Tax point date",
+      "startDate": "Invoice period start date",
+      "endDate": "Invoice period end date",
+      "contractDocumentReferenceId": "Contract number",
+      "orderReferenceId": "Buyer's order number",
+      "orderReferenceSalesOrderId": "Shipping advice number",
+      "receiptDocumentReferenceId": "Receipt confirmation number",
+      "note": "General document notes",
+      "accountingCost": "Cost center",
       "invoiceDocumentReference": {
-        "issueDate": "ExampleText",
-        "id": "ExampleText"
+        "issueDate": "Date of the corrected invoice",
+        "id": "Number of the corrected invoice"
       }
     },
     "customer": {
-      "header": ""
+      "header": "Buyer"
     },
     "supplier": {
-      "header": ""
+      "header": "Seller"
+    },
+    "issuer": {
+      "header": "Invoice issuer"
     },
     "contact": {
-      "nameAndSurname": "",
-      "phoneNumber": "",
-      "mail": "",
-      "pefId": "",
-      "title": ""
+      "nameAndSurname": "First and last name",
+      "phoneNumber": "Phone number",
+      "mail": "Email",
+      "pefId": "PEF electronic identifier",
+      "title": "Contact"
     },
     "postal": {
-      "address": ""
+      "address": "Address"
     },
     "registration": {
-      "title": "",
-      "id": "",
-      "Identifier": ""
+      "title": "Registry data",
+      "id": "Registration identifier",
+      "identifier": "{{id}} identifier"
     },
     "taxRepresentative": {
-      "header": ""
+      "header": "Seller's tax representative"
     },
     "delivery": {
-      "header": "",
-      "deliveryLocationID": "",
-      "actualDeliveryDate": ""
+      "header": "Recipient",
+      "deliveryLocationID": "Identifier",
+      "actualDeliveryDate": "Actual delivery date/Sale date"
     },
     "payeeparty": {
-      "header": "Payee party",
-      "companyID": "",
-      "partyIdentificationID": ""
+      "header": "Payee",
+      "companyID": "Legal registration identifier",
+      "partyIdentificationID": "Identifier"
+    },
+    "receiverParty": {
+      "header": "Recipient"
     },
     "invoiceDescrption": {
       "invoiceNumber": "Preceding invoice number",
@@ -1015,12 +1028,12 @@
       "generatorVersion": "(ksef-pdf-generator - version {{version}})"
     },
     "taxtotal": {
-      "taxAmountId": "",
-      "taxSubtotalHeader": "",
-      "taxCategory": "",
-      "taxExemptionReason": "",
-      "taxableAmount": "",
-      "taxAmount": ""
+      "taxAmountId": "Total",
+      "taxSubtotalHeader": "VAT breakdown by rate",
+      "taxCategory": "Tax type and rate",
+      "taxExemptionReason": "VAT exemption reason",
+      "taxableAmount": "Taxable amount for VAT category",
+      "taxAmount": "Tax amount for VAT category"
     },
     "payment": {
       "title": "Payment instructions",
@@ -1037,31 +1050,31 @@
       "directDebitId": "Direct debit identification"
     },
     "legalMonetaryTotal": {
-      "taxExclusiveAmount": "ExampleText",
-      "taxInclusiveAmount ": "ExampleText",
-      "prepaidAmount": "ExampleText",
-      "rndPrepaidAmount": "ExampleText",
-      "payableAmount": "ExampleText",
-      "settlementAmount": "ExampleText",
+      "taxExclusiveAmount": "Invoice total excluding VAT",
+      "taxInclusiveAmount": "Total invoice amount including VAT",
+      "prepaidAmount": "Prepaid amount",
+      "rndPrepaidAmount": "Rounding amount",
+      "payableAmount": "Amount due",
+      "settlementAmount": "Amount to be settled",
       "additionalInvoiceGrossData": {
-        "Bilans": "ExampleText",
-        "Faktury": "ExampleText",
-        "Raty": "ExampleText",
-        "Odsetki": "ExampleText"
+        "Bilans": "Balance from previous settlement period",
+        "Faktury": "Advance invoices issued during the settlement period",
+        "Raty": "Equipment installments",
+        "Odsetki": "Interest on the invoice"
       }
     },
     "allowancecharge": {
-      "allowanceHeader": "",
-      "chargeHeader": "",
-      "allowanceReason": "",
-      "chargeReason": "",
-      "allowanceReasonCode": "",
-      "chargeReasonCode": "",
-      "baseAmount": "",
-      "allowanceAmount": "",
-      "chargeAmount": "",
-      "taxCategory": "",
-      "totalAmount": ""
+      "allowanceHeader": "Document-level allowances",
+      "chargeHeader": "Document-level charges",
+      "allowanceReason": "Allowance reason",
+      "chargeReason": "Charge reason",
+      "allowanceReasonCode": "Allowance reason code",
+      "chargeReasonCode": "Charge reason code",
+      "baseAmount": "Base amount",
+      "allowanceAmount": "Allowance amount",
+      "chargeAmount": "Charge amount",
+      "taxCategory": "Tax type and rate",
+      "totalAmount": "Total"
     },
     "invoiceLine": {
       "title": "Invoice line items",
@@ -1089,7 +1102,39 @@
       "purchaseOrderItemId": "Related purchase order item identifier",
       "invoiceItemId": "Invoiced item identifier in invoice line",
       "charges": "Charges",
-      "discounts": "Discounts"
+      "discounts": "Discounts",
+      "taxVat": "VAT tax",
+      "grossAmount": "Gross amount"
+    },
+    "taxCategory": {
+      "AE": "Reverse charge",
+      "E": "Exempt",
+      "S": "Standard",
+      "G": "Export",
+      "O": "Not subject to VAT",
+      "K": "Intra-EU supply",
+      "Z": "Zero",
+      "L": "Canary Islands general indirect tax",
+      "M": "Tax for production, services and importation in Ceuta and Melilla",
+      "B": "Transferred (VAT), in Italy"
+    },
+    "diffSummary": {
+      "title": "Summary of differences",
+      "table": {
+        "typeAndValue": "VAT type and rate",
+        "netto": "Net amount",
+        "discount": "Discount amount"
+      }
+    },
+    "accountReckoning": {
+      "title": "Account settlement",
+      "lineNo": "No.",
+      "name": "Name",
+      "description": "Description",
+      "period": "Period",
+      "costAmount": "Amount",
+      "periodFrom": "from",
+      "periodTo": "to"
     }
   }
 }
